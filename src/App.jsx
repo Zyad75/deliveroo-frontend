@@ -13,8 +13,8 @@ const App = () => {
         const response = await axios.get(
           "https://site--backend-deliveroo--cszclskmpcqr.code.run/"
         );
-        console.log(response.data.data.restaurant.path);
-        setData(response.data.data.restaurant.path);
+        console.log(response);
+        setData(response);
         setIsLoading(false);
       } catch (error) {
         console.log(error.response); // contrairement au error.message d'express
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <>
       {" "}
-      {isLoading ? <span> EN cours de chargement...</span> : <div>{data}</div>}
+      {isLoading ? <span> EN cours de chargement...</span> : <div>bonjour</div>}
     </>
   );
 };
