@@ -25,11 +25,8 @@ const App = () => {
   return (
     <>
       {" "}
-      {isLoading ? (
-        <span> EN cours de chargement...</span>
-      ) : (
-        <div>{data.restaurant.path}</div>
-      )}
+      {isLoading && <span> EN cours de chargement...</span>}
+      <div>{data.restaurant.path}</div>
     </>
   );
 };
