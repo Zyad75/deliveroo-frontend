@@ -13,8 +13,8 @@ const App = () => {
         const response = await axios.get(
           "https://site--backend-deliveroo--cszclskmpcqr.code.run/"
         );
-        console.log(response.data);
-        setData(response.data);
+        console.log(response.data.data.restaurant.path);
+        setData(response.data.data.restaurant.path);
         setIsLoading(false);
       } catch (error) {
         console.log(error.response); // contrairement au error.message d'express
