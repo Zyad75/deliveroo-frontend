@@ -10,7 +10,9 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("");
+        const response = await axios.get(
+          "https://site--backend-deliveroo--cszclskmpcqr.code.run/"
+        );
         console.log(response);
         setData(response);
         setIsLoading(false);
