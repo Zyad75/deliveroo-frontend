@@ -1,11 +1,35 @@
 // import { useState } from "react";
 
+import { useState, useEffect } from "react";
 import "./App.css";
+import axios from "axios";
 
-function App() {
-  // const [count, setCount] = useState(0);
-
-  return <div>coucou</div>;
-}
+const App = () => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("");
+        console.log(response);
+        setData(response);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error.response); // contrairement au error.message d'express
+      }
+    };
+    fetchData();
+  }, []);
+  return (
+    <>
+      {" "}
+      {isLoading ? (
+        <span> EN cours de chargement...</span>
+      ) : (
+        <div>{response.restaurant.path}</div>
+      )}
+    </>
+  );
+};
 
 export default App;
