@@ -28,7 +28,7 @@ const App = () => {
       {isLoading ? (
         <span> EN cours de chargement...</span>
       ) : (
-        <div>{data.restaurant.path}</div>
+        <div>{data[restaurant].path}</div>
       )}
     </>
   );
