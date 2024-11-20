@@ -134,3 +134,7 @@ h2 {
   padding: 10px;
   margin-bottom: 20px;
 }
+footer {
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
