@@ -1,0 +1,136 @@
+.titleAndDesc {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex: 2.2;
+}
+body main {
+  margin: 0 auto;
+  width: 80%;
+  font-family: system-ui, sans-serif;
+}
+header {
+  border-bottom: solid 1px lightgray;
+  width: 100%;
+}
+.TitleAndImg img {
+  height: 200px;
+  width: 350px;
+  border-radius: 6px;
+  flex: 1;
+}
+.TitleAndImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.titleAndDesc p {
+  line-height: 28.8px;
+  font-size: 19px;
+}
+.buttonsPlats {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 46%;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.buttonsPlats:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.9px black;
+}
+
+.textButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  gap: 8px;
+}
+.imgPlats {
+  height: 131px;
+  width: 131px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.divPlats {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.allPlats {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.sansImage {
+  height: 131px;
+  width: 131px;
+  border-radius: 5px;
+}
+.platsAndPanier {
+  display: flex;
+}
+.platsTout {
+  flex: 2.2;
+}
+.baskets {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px #333333;
+  flex: 1;
+  text-align: center;
+  max-height: max-content;
+  position: sticky;
+  top: 10px;
+  background-color: whitesmoke;
+}
+.titreBasket {
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 4px;
+  color: gray;
+  opacity: 0.6;
+}
+.descBasket {
+  padding: 100px;
+  color: gray;
+}
+.divPlatPanier {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.titre2Basket {
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  background-color: rgb(54, 193, 179);
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+}
+.sousTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
