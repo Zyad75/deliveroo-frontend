@@ -140,24 +140,6 @@ const App = () => {
           </div>
         )}
       </main>
-      <footer>
-        Made with{" "}
-        <a href="https://react.dev/" target="blank">
-          React
-        </a>{" "}
-        at{" "}
-        <a href="https://www.lereacteur.io/" target="blank">
-          le Reacteur
-        </a>{" "}
-        by{" "}
-        <a
-          href="https://github.com/Zyad75"
-          target="blank"
-          style={"font-weight: bold"}
-        >
-          Zyad
-        </a>
-      </footer>
     </div>
   );
 };
