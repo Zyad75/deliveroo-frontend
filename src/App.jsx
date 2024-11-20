@@ -116,13 +116,13 @@ const App = () => {
               {/* ici je souhaite afficher une case panier a coté des plats  */}
               {/* je veux que lorsque l'on clique sur un des plat
 
- - alors le panier affiche le titre du plat ainsi que le prix du plat
- - 
+                 - alors le panier affiche le titre du plat ainsi que le prix du plat
+   
 
-//-----------//
-Sinon le panier affiche "Votre panier est vide"
+                  //-----------//
+                   Sinon le panier affiche "Votre panier est vide"
 
-*/}
+                                    */}
               <div className="baskets">
                 {!choixPlat[0] ? (
                   <>
@@ -140,6 +140,7 @@ Sinon le panier affiche "Votre panier est vide"
           </div>
         )}
       </main>
+      <footer>Made with React at le Reacteur by Zyad</footer>
     </div>
   );
 };
